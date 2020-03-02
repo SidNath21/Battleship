@@ -1,0 +1,243 @@
+body{
+    font-size: 32px;
+    font-family: 'Comic Sans', Times, serif;
+    color: white;
+    background-color: #292930;
+    text-align: center; 
+    /*background-image: url("sky.jpg");*/
+}
+
+#game{
+    
+    height: 100%;
+    margin: 10px;
+    border: 10px solid #FF652F;
+    background-color: black;
+    border-radius: 25px;
+    position: relative;
+    margin-bottom: 50px;
+   
+    
+}
+
+#ships{
+    width: 200px;
+    height: 250px;
+    border: 5px solid #0B5345;
+    border-radius: 10px;
+    position: absolute;
+
+    /* top: 1em */
+    top: 3.5em; 
+
+    left: 50%;
+    margin-left: -105px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    
+}
+
+#ships button{
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #292930;
+    color: white;
+    border: 1px solid green;
+    
+}
+
+#ships button:hover{
+    background-color: darkgrey;
+}
+
+#random{
+
+    width: 200px;
+    height: 80px;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: orange;
+    color: white;
+    text-shadow: 1px 1px black;
+    border: 0;
+    border-radius: 15px;
+    position: absolute;
+    
+    /*top: 60%; */
+    bottom: 20%;
+
+    margin-left: -100px;
+    margin-top: -40px;
+}
+
+#random:hover{
+    background-color: white;
+    color: orange;
+}
+
+#startGame{
+    width: 200px;
+    height: 80px;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: orange;
+    color: white;
+    text-shadow: 1px 1px black;
+    border: 0;
+    border-radius: 15px;
+    position: absolute;
+    
+    /* top: 75%; */
+    top: 90%;
+
+    margin-left: -100px;
+    margin-top: -40px;
+}
+
+#startGame:hover{
+    background-color: white;
+    color: orange;
+}
+
+#message{
+    border: 5px solid white;
+    border-radius: 25px;
+    height: 70px;
+    width: 95%;
+    text-align: center;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;;
+    
+    /* bottom: 10px; */
+    position: absolute;
+
+}
+
+p{
+    
+    line-height: 0px;
+    margin-top: 0;
+    
+}
+
+.text{
+   
+    line-height: 70px;
+    text-align: center;
+    font-size: 48px;
+}
+
+button:focus {outline:0;} 
+
+#player{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    left: 1em;
+
+    /* margin-top: 1em */
+    margin-top: 3.5em;
+
+    background-color: #add8e6;
+    border: 5px solid blue;
+    box-shadow: 0 0 3px 3px blue;
+    border-radius: 15px;
+    
+}
+
+#computer{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    right: 1em;
+
+    /* margin-top: 1em */
+    margin-top: 3.5em;
+
+    background-color: #FFCCCB;
+    border: 5px solid red;
+    box-shadow: 0 0 3px 3px red;
+    
+}
+
+#playerBoard{
+   
+   border: 3px solid white;
+   background-color: black;
+   border-radius: 5px;
+   width: 400px;
+   height: 400px;
+   margin: 0 auto;
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-content: stretch;
+   grid-gap: 0; 
+   
+}
+
+.columnP{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.cellP{
+    display: flex; 
+    flex: 1;
+    border: 1px solid white;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 28px;
+}
+
+#computerBoard{
+
+    border: 3px solid white;
+    background-color: black;
+    border-radius: 5px;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    grid-gap: 0; 
+
+    
+}
+
+.columnC{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    text-align: center;
+}
+
+.cellC{
+   
+    display: flex; 
+    flex: 1;
+    border: 1px solid white;
+    background-color: black;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 28px;
+   
+}
+
+
+
