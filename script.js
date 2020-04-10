@@ -35,6 +35,8 @@ let dc = [0, 0, -1, 1];
 let compGuess = {
     r: -1,
     c: -1,
+    newR: -1,
+    newC: -1,
     nextMove: false,
     works: false
 }
